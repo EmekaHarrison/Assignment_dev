@@ -1,0 +1,17 @@
+{
+    "id": "100",
+    "signals": [
+        {
+            "name": "temperature",
+            "type": "float",
+            "length": 10,
+            "comment": "the ambient temperature"
+        },
+        {
+            "name": "humidity",
+            "type": "uint8_t",
+            "length": 8,
+            "comment": "the ambient humidity percentage"
+        }
+    ]
+}
