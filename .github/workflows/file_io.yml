@@ -1,0 +1,31 @@
+name: Build and test "File IO" Component
+
+on:
+  push:
+    branches:
+      - master
+      - develop
+      - feature
+      - refactor
+  pull_request:
+    branches:
+      - master
+      - develop
+
+jobs:
+  build_and_test:
+    name:  Build the source code and run Tests(GoogleTest)
+    runs-on:  ubuntu-latest
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v3
+      - name: Install prerequisites
+        run: sudo apt-get install -y cmake build-essential
+      - name: build the code
+        run: |
+          mkdir build 
+          cd build
+          cmake ../file_io
+          cmake --build .
+      - name: run tests
+        run: ./build/lib_ut_test
