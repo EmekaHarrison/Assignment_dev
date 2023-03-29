@@ -4,9 +4,9 @@ CAN_min_signals::CAN_min_signals()
 {
     m_startMsgId = 100;
     m_temperatureGetMsGid = m_startMsgId + 2;
-    m_temperatureSetMsGid = m_startMsgId + 3;
+    m_temperatureSetMsGid = m_startMsgId + 2 + 1;
     m_humidityGetMsGid = m_startMsgId + 4;
-    m_temperatureSetMsGid = m_startMsgId + 5;
+    m_temperatureSetMsGid = m_startMsgId + 4 + 1;
 }
 std::string CAN_min_signals::get_temperature()
 {

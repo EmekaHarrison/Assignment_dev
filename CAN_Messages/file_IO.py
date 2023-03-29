@@ -161,8 +161,9 @@ def generate_source(json_filename, json_dict):
 
 if __name__ == "__main__":
     input_filename = "min_signals.json"
-    filename_h = "/Users\nwabu\OneDrive\Desktop\CI Assignment/CAN_Messages/output/include/can_messages/CAN_min_signals.h"
-    filename_cpp = "/Users\nwabu\OneDrive\Desktop\CI Assignment/CAN_Messages/output/src/min_signals.cpp"
+
+    filename_h = "/mnt/c/Users/nwabu/OneDrive/Desktop/CI_Assignment/CAN_Messages/output/include/can_messages/CAN_min_signals.h"
+    filename_cpp = "/mnt/c/Users/nwabu/OneDrive/Desktop/CI_Assignment/CAN_Messages/output/src/min_signals.cpp"
     json_dict = {}
     with open(input_filename, "r") as file_fd:
         json_raw_content = file_fd.read()

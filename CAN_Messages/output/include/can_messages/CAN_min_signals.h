@@ -6,19 +6,19 @@ class CAN_min_signals
 public:
 	CAN_min_signals();
 	/*
-	to obtain the ambient temperature
+	get the ambient temperature
 	*/
 	std::string get_temperature();
 	/*
-	To set the ambient temperature
+	set the ambient temperature
 	*/
 	std::string set_temperature(float newValue);
 	/*
-	to get the ambient humidity percentage
+	get the ambient humidity percentage
 	*/
 	std::string get_humidity();
 	/*
-	To set the ambient humidity percentage
+	set the ambient humidity percentage
 	*/
 	std::string set_humidity(uint8_t newValue);
 

@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/CI_Assignment_cmake.dir/app/src/maintest.cpp.o -o CI_Assignment_cmake  libfile_io_lib.a 

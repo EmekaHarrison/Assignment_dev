@@ -1,0 +1,2 @@
+/usr/bin/ar qc libfile_io_lib.a CMakeFiles/file_io_lib.dir/lib/src/project.cpp.o
+/usr/bin/ranlib libfile_io_lib.a

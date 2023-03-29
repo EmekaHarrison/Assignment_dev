@@ -69,16 +69,6 @@ std::string parse_set_func_and_call(std::string line)
         CAN_min_signals signal_obj;
         return "\t\t" + signal_obj.set_humidity(u_value);
     }
-    // else if (signal_name.compare("stop_signal_light") == 0)
-    // {
-    //    bool b_value = false;
-    //   if (value.compare("enabled") == 0)
-    //   {
-    //      b_value = true;
-    //  }
-    // CAN_min_signals signal_obj;
-    //  return signal_obj.set_stop_signal_light(b_value);
-    // }
 
     return result;
 }
@@ -133,12 +123,13 @@ int main(int argc, char *argv[])
     std::vector<std::string> output_content = convert(input_content); // To get an output
 
     // DECORATION PART !
-    std::vector<std::string> final_output = {"{", "\t \"cmds\" : [ " };
+    std::vector<std::string> final_output = {"{", "\t \"cmds\" : [ "};
 
     auto lineIt = output_content.begin();
     for (;
          std::next(lineIt) != output_content.end();
-         ++lineIt){
+         ++lineIt)
+    {
         final_output.push_back((*lineIt) + ";");
     }
     final_output.push_back(*lineIt);
